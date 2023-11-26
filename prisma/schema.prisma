@@ -61,6 +61,29 @@ model VerificationToken {
   @@map("verificationtokens")
 }
 
+model Customer {
+  id      String  @id @default(cuid())
+  name    String
+  email   String? @unique
+  address String  @db.Text
+  phone   String
+  gender  String
+}
+
+model CustomerBill {
+  id          String    @id @default(cuid())
+  customerId  String    @map("customer_id")
+  packageType String    @map("package_id")
+  renew_date  DateTime? @db.Date
+  expired_at  DateTime? @db.Date
+}
+
+model Package {
+  id          String  @id @default(cuid())
+  name        String
+  description String? @db.Text
+}
+
 model Product {
   id          Int       @id @default(autoincrement())
   name        String

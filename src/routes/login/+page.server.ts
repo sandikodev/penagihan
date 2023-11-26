@@ -1,5 +1,5 @@
 import { JWT_SECRET } from '$env/static/private';
-import prisma from '$lib/prisma/prisma';
+import prisma from '$lib/prisma';
 import { fail } from '@sveltejs/kit';
 import { md5 } from 'hash-wasm';
 import jwt from 'jsonwebtoken';

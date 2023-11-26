@@ -1,9 +1,11 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-
 	export let data: PageData;
 </script>
 
-<h6>Data loaded in<br /><code>+page.ts</code></h6>
-<p>{data.greeting}</p>
-<pre>{data.hasil}</pre>
+coba
+<ul>
+	{#each data.package as item}
+		<li>{item.name}</li>
+	{/each}
+</ul>
