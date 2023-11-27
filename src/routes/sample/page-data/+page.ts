@@ -1,4 +1,4 @@
-import { trpc } from '$lib/trpc/client';
+import { trpc } from '$lib/trpc/browserClient';
 import type { PageLoad } from './$types';
 
 // 👇 this method will be invoked on BOTH the server and the client, as needed ⚠️

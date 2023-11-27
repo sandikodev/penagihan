@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { trpc } from '$lib/trpc/client';
+	import { trpc } from '$lib/trpc/browserClient';
 	import type { PageData } from './$types';
 
 	let greeting = 'press the button to load data';
