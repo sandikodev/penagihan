@@ -69,15 +69,15 @@ work in progress updated weekly here(hopefuly)
 
 ## TECH STACK
 
-| fungsi       | nama        |
-| ------------ | ----------- |
-| frontend     | svelte      |
-| backend      | kit         |
-| ORM          | prisma      |
-| database     | mysql       |
-| cloud hosted | planetscale |
-| auth         | authjs      |
-| typesafe api | trpc        |
+| fungsi       | nama        | helps                                                                  |
+| ------------ | ----------- | ---------------------------------------------------------------------- |
+| frontend     | svelte      | [docs](https://svelte.dev/docs)                                        |
+| backend      | kit         | [docs](https://kit.svelte.dev/docs)                                    |
+| ORM          | prisma      | [mysql](https://www.prisma.io/docs/concepts/database-connectors/mysql) |
+| database     | mysql       | [common search by yourself]()                                          |
+| cloud hosted | planetscale | [prisma](https://planetscale.com/docs/prisma/prisma-best-practices)    |
+| auth         | authjs      | [kit]([kit](https://authjs.dev/reference/sveltekit))                   |
+| typesafe api | trpc        | [docs](https://trpc.io/docs/)                                          |
 
 ## Regards
 
