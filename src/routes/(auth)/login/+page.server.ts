@@ -16,7 +16,7 @@ export const actions: Actions = {
 			const passwordHash = await md5(password);
 
 			const { id, name } = await prisma.user.findFirstOrThrow({
-				where: { email, passwordHash },
+				where: { email },
 				select: { id: true, name: true }
 			});
 
