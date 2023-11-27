@@ -81,4 +81,7 @@ work in progress updated weekly here(hopefuly)
 
 ## Regards
 
+## DIBUTUHKAN
+1. UI/UX designer
+
 @sandikodev
