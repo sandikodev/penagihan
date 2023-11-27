@@ -5,6 +5,6 @@ import type { PageLoad } from './$types';
 export const load: PageLoad = (event) => {
 	return {
 		greeting: trpc(event).greeting.query(),
-		hasil: trpc(event).createTodo.query({ done: false, text: 'coba' })
+		hasil: trpc(event).createTodo.query({ done: true, text: 'sdfdsfsdfsdfsdf' })
 	};
 };

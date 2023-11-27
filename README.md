@@ -22,6 +22,20 @@ work in progress updated weekly here(hopefuly)
 3. commit your rock then pull request to this repo's
 4. happy coding
 
+## Get Ready Database for Development
+
+> optional but recomended
+
+1. start mysql services
+   ```
+   docker run -it --rm -e MYSQL_ROOT_PASSWORD=secret -e MYSQL_DATABASE=development --name mysqldb -p 3307:3306 mysql:8.0
+   ```
+2. init `SHADOW_DATABASE_URL` or `DATABASE_URL` inside `.env.dev`
+   ```
+   DATABASE_URL="mysql://root:secret@localhost:3307/development"
+   SHADOW_DATABASE_URL="mysql://root:secret@localhost:3307/development"
+   ```
+
 ## How To Rock
 
 1. fork this project

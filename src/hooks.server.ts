@@ -11,10 +11,13 @@ import prisma from '$lib/prisma';
 import authorization from '$lib/hooks.server/authorization';
 
 export const handle: Handle = sequence(
+	// see behind scene route maked
+	// https://authjs.dev/getting-started/providers/oauth-tutorial?frameworks=sveltekit
 	SvelteKitAuth({
 		adapter: PrismaAdapter(prisma),
 		providers: [GitHub({ clientId: GITHUB_ID, clientSecret: GITHUB_SECRET })]
 	}),
+	// protect /dashboard
 	authorization,
 	createTRPCHandle({ router, createContext })
 );

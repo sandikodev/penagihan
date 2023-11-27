@@ -1,12 +1,11 @@
 import prisma from '$lib/prisma';
-import type { Context } from '$lib/trpc/context';
-import { initTRPC } from '@trpc/server';
 import delay from 'delay';
 import { z } from 'zod';
-
-export const t = initTRPC.context<Context>().create();
+import { t } from './init';
+import { authors } from './routes/author';
 
 export const router = t.router({
+	authors,
 	fetchPackage: t.procedure.query(async () => {
 		return await prisma.package.findMany();
 	}),
